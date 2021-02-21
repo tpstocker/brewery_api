@@ -4,6 +4,8 @@ const BreweriesList = ({breweries, onSelectedBrewery}) => {
 
     const breweryNames = breweries.map((brewery) =>{
         return(
+            
+
         <li onClick ={() => {onSelectedBrewery(brewery)}} key={brewery.id}>{brewery.name}</li>
         )
     })

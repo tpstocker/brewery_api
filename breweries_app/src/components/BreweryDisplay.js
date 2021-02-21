@@ -8,13 +8,11 @@ const BreweryDisplay = ({brewery, onVisitedToggle}) => {
     return(
 
         <>
-        <div className="brewery-details">
+        <div className="brewery-display">
 
-                <h2>{brewery.name}</h2>
+                <h1>{brewery.name}</h1>
                 <h3>{brewery.city}, {brewery.state}</h3>
-
                 <div>
-                    <h1>{brewery.website_url}</h1>
                     <button onClick={() => {onVisitedToggle(brewery)}}>
             {brewery.visited ? 'Delete from Favourites' : 'Add to favourites'}
             </button>            

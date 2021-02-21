@@ -1,7 +1,35 @@
 .App {
-  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 ul {
   list-style: none;
+}
+
+.breweries_container {
+
+  background-color: #ffa142;
+  display: flex;
+  justify-content: space-around;
+  overflow-x: hidden;
+}
+
+#title {
+  text-align: center;
+}
+
+#display {
+
+
+  width: 70%;
+  text-align: center;
+
+}
+
+#mapid {
+  height: 10px;
+}
+
+li:hover {
+  font-size: larger;
 }

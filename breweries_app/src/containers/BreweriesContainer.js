@@ -41,12 +41,16 @@ const BreweriesContainer = () => {
 
     return(
         <>
-        <h1 id='title'>Breweries</h1>
+        <div className="breweries_container">
             <div>
-                <BreweriesList breweries={breweries} onSelectedBrewery={handleSelectedBrewery}></BreweriesList>
-                <BreweryDisplay brewery={selectedBrewery} onVisitedToggle={handleVisitedToggle}></BreweryDisplay>
-            </div>
-                <VisitedBreweriesList breweries={breweries} onSelectedBrewery={handleSelectedBrewery}></VisitedBreweriesList>
+                <h1 id='title'>Breweries</h1>
+                    <BreweriesList breweries={breweries} onSelectedBrewery={handleSelectedBrewery}></BreweriesList>
+                </div>
+                <div id="display">
+                    <BreweryDisplay brewery={selectedBrewery} onVisitedToggle={handleVisitedToggle}></BreweryDisplay>
+                    <VisitedBreweriesList breweries={breweries} onSelectedBrewery={handleSelectedBrewery}></VisitedBreweriesList>
+                </div>
+        </div>
         </>
     )
 }

@@ -6,9 +6,9 @@ const VisitedBreweriesList = ({breweries, onSelectedBrewery}) => {
         return brewery.visited
     })
 
-    const listNodes = filteredBreweries.map((brewery, index) => {
+    const listNodes = filteredBreweries.map((brewery) => {
         return(
-            <li onClick ={() => {onSelectedBrewery(brewery)}} key={brewery.id}>{brewery.name}</li>
+            <li onCLick ={() => {onSelectedBrewery(brewery)}} key={brewery.id}>{brewery.name}</li>
             )
         
     })
